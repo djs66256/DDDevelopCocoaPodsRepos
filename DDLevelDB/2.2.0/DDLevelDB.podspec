@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/djs66256/Objective-LevelDB.git", :tag => "2.2.0" }
 
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "Classes/**/*.{h,m,mm}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -58,6 +58,6 @@ Pod::Spec.new do |s|
   s.requires_arc = false
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "leveldb-library"
+  s.dependency "leveldb-library", "~>1.18.2"
 
 end
