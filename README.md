@@ -18,3 +18,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 ```
+
+```
+pod lib lint --sources=https://github.com/djs66256/DDDevelopCocoaPodsRepos.git,master --verbose
+
+s.dependency "private specs"
+```
